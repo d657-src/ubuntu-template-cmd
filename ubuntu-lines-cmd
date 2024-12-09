@@ -1,0 +1,85 @@
+# swap caps and escape
+# type it to ~/.profile
+setxkbmap -option caps:swapescape
+
+# get rid of super + num
+gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys false
+gsettings set org.gnome.shell.keybindings switch-to-application-1 []
+gsettings set org.gnome.shell.keybindings switch-to-application-2 []
+gsettings set org.gnome.shell.keybindings switch-to-application-3 []
+gsettings set org.gnome.shell.keybindings switch-to-application-4 []
+gsettings set org.gnome.shell.keybindings switch-to-application-5 []
+gsettings set org.gnome.shell.keybindings switch-to-application-6 []
+gsettings set org.gnome.shell.keybindings switch-to-application-7 []
+gsettings set org.gnome.shell.keybindings switch-to-application-8 []
+gsettings set org.gnome.shell.keybindings switch-to-application-9 []
+
+# get rif of hotkeys 1-9
+idconf write /org/gnome/shell/extensions/dash-to-panel/hot-keys false
+dconf write /org/gnome/shell/extensions/dash-to-panel/hotkey-prefix-text "''"
+
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-1 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-2 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-3 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-4 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-5 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-6 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-7 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-8 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-9 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-10 "['']"
+
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-1 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-2 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-3 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-4 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-5 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-6 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-7 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-8 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-9 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-hotkey-kp-10 "['']"
+
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-1 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-2 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-3 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-4 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-5 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-6 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-7 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-8 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-9 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-10 "['']"
+
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-1 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-2 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-3 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-4 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-5 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-6 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-7 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-8 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-9 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-ctrl-hotkey-kp-10 "['']"
+
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-1 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-2 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-3 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-4 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-5 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-6 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-7 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-8 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-9 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-10 "['']"
+
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-1 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-2 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-3 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-4 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-5 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-6 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-7 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-8 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-9 "['']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/app-shift-hotkey-kp-10 "['']"
